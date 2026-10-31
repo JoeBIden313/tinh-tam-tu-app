@@ -47,7 +47,7 @@ jobs:
             cp icons/launcher-$d.png "$R/ic_launcher_round.png"
             cp icons/foreground-$d.png "$R/ic_launcher_foreground.png"
           done
-        - name: Che do toan man hinh (an thanh trang thai va thanh dieu huong)
+      - name: Che do toan man hinh (an thanh trang thai va thanh dieu huong)
         run: |
           MA=$(find android/app/src/main/java -name MainActivity.java | head -1)
           PKG=$(grep -m1 '^package ' "$MA")
