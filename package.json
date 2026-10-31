@@ -1,0 +1,13 @@
+{
+  "name": "tinh-tam-tu-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tinh Tam Tu - ban APK (Capacitor)",
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/core": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}
