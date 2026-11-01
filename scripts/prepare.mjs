@@ -52,5 +52,6 @@ try {
 html = html.replace(/<link rel="manifest"[^>]*>\s*/g, '');
 html = html.replace(/<script>if\('serviceWorker' in navigator\)[\s\S]*?<\/script>\s*/g, '');
 
+if (fs.existsSync('tex')) fs.cpSync('tex', path.join(OUT, 'tex'), { recursive: true });
 fs.writeFileSync(path.join(OUT, 'index.html'), html);
 console.log('Xong: www/index.html', html.length, 'ky tu');
